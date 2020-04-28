@@ -3,7 +3,10 @@
 drupal_core_version: 8.8.x
 
 # The path where Drupal will be downloaded and installed
-drupal_core_path: /var/www/drupal-{{ drupal_core_version}}-dev
+drupal_core_path: /var/www/drupal-{{ drupal_core_version }}-dev
 
 # The resulting domain will be [domain].test (with .test appended)
 domain: drupal
+
+# The Drupal site's name
+drupal_site_name: "Drupal Test"
