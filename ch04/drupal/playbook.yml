@@ -163,10 +163,3 @@
         creates={{ drupal_core_path }}/sites/default/settings.php
       notify: restart apache
       # become_user: www-data
-
-    - name: Ensure Drupal codebase is owned by www-data
-      file:
-        path: "{{ drupal_core_path }}"
-        owner: www-data
-        group: www-data
-        recurse: true
